@@ -63,3 +63,8 @@ Route::any('/', function(){
 Route::match(['get','post'], '/', function(){
     // handle GET or POST requests to this route
 });
+
+
+// routes calling controller methods
+
+Route::get('members', 'MembersController@member');
