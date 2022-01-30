@@ -73,3 +73,16 @@ Route::get('members', 'MembersController@member');
 // definning aroute with name()
 
 Route::get('members', 'MembersController@member')->name('members.show');
+
+
+// definning a group route
+
+Route::group(function(){
+    Route::get('hellow', function(){
+        return 'hellow';
+    });
+
+    Route::get('world', function(){
+        return 'world';
+    });
+});
