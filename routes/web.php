@@ -86,3 +86,14 @@ Route::group(function(){
         return 'world';
     });
 });
+
+// restricting group of routes to logged in users
+
+Route::middleware('auth')->group(function(){
+    Route:get('dashboard', function(){
+        return view('dashboard');
+    });
+    Route::get('account', function () {
+        return view('account');
+        });
+});
