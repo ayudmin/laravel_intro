@@ -15,7 +15,28 @@ use Illuminate\Support\Facades\Route;
 
 // custom route
 
+/*
 Route::get('/', function (){
     return 'Hello, world!';
 });
+*/
 
+
+Route::get('/', function(){
+    return view('welcome');
+});
+
+
+Route::get('about', function(){
+    return view('about');
+});
+
+
+Route::get('products', function(){
+    return view('products');
+});
+
+
+Route::get('service', function(){
+    return view('services');
+});
