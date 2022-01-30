@@ -68,3 +68,8 @@ Route::match(['get','post'], '/', function(){
 // routes calling controller methods
 
 Route::get('members', 'MembersController@member');
+
+
+// definning aroute with name()
+
+Route::get('members', 'MembersController@member')->name('members.show');
