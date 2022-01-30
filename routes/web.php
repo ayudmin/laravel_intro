@@ -40,3 +40,26 @@ Route::get('products', function(){
 Route::get('service', function(){
     return view('services');
 });
+
+
+// routes on other actions
+
+Route::put('/', function(){
+    // handle someone sending PUT request to this route
+});
+
+Route::post('/', function(){
+    // handle someone sending POST request to this route
+});
+
+Route::delete('/', function(){
+    // handle someone sending DELETE request to this route
+});
+
+Route::any('/', function(){
+    // handle any verb request to this route
+});
+
+Route::match(['get','post'], '/', function(){
+    // handle GET or POST requests to this route
+});
